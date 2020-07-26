@@ -1,3 +1,17 @@
+"""
+input:
+4
+2
+3
+4
+1
+
+output
+2 3 4 1 
+"""
+
+
+
 class Node:
     def __init__(self, data):
         self.data = data
