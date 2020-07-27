@@ -47,15 +47,21 @@ def print_singly_linked_list(node, sep, fptr):
 #
 """
 문제 :  주어진 N개의 입력값을 입력의 역링크드리스트들로 만들어라. 
-input 첫라인: 테스트 리스트 갯수 T  
+input 첫라인: 테스트 리스트 갯수 T, 총 리스트갯수   
 input 두번째: 각 테스트리스트의 엘리먼트 갯수 N  
 input 세번째: 각 엘리먼트 값 element[1..N]
 총입력 : list[1...T]
 
+해결방법 : 
+- last, current, nextnode pointer 를 사용 
+- last는 가장 최근 이전의 노드를 가르킨다. (첫 값은  none)
+- nextnode는 다음 앞의 노드를 가리킨다. 
+- current는 노드를 한단계씩이동하여, current.next point 를 last 로 역으로 연결하여 역순 링크드 리스트를 만든다. 
+
 explane_input :
 3  # 리스트 3개가 주어진다. 
 4  # 1 번째 리스트는 엘리먼트가 4개다 .
-1  # 1 번째 리스트의 1번째 엘리먼트
+1  # 1 번째 리스트의 1번째 엘리먼트 
 2  # 1 번째 리스트의 ...
 3  # 1 번째 리스트의 ...
 4  # 1 번째 리스트의 ...4번째 
