@@ -28,6 +28,23 @@ class DoublyLinkedList:
 
 
         self.tail = node
+ 
+"""
+문제: 
+문제해설:
+접근방식: 
+input 해설:
+sample input
+1
+4
+1
+2
+3
+4
+
+sample output
+4 3 2 1 
+"""
 
 def print_doubly_linked_list(node, sep, fptr):
     while node:
