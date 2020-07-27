@@ -47,12 +47,12 @@ def print_singly_linked_list(node, sep, fptr):
 #
 """
 문제 :  주어진 N개의 입력값을 입력의 역링크드리스트들로 만들어라. 
-
 input 첫라인: 테스트 리스트 갯수 T  
 input 두번째: 각 테스트리스트의 엘리먼트 갯수 N  
 input 세번째: 각 엘리먼트 값 element[1..N]
 총입력 : list[1...T]
-example_input :
+
+explane_input :
 3  # 리스트 3개가 주어진다. 
 4  # 1 번째 리스트는 엘리먼트가 4개다 .
 1  # 1 번째 리스트의 1번째 엘리먼트
@@ -73,12 +73,22 @@ example_input :
 8  # 3 번째 리스트의
 5  # 3 번째 리스트의 6번째 엘리먼트 
 
-
-
-output:
+explain_output:
 4 3 2 1
 1 5 8 7 9
 5 8 3 11 8 10
+
+input:
+1
+5
+1
+2
+3
+4
+5
+
+output: 
+5 4 3 2 1
 """
 def reverse(head):
     if head is None:
